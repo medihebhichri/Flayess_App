@@ -1,0 +1,22 @@
+#projectsTable {
+    -fx-background-color: #FFF;
+}
+
+.table-view .column-header .label {
+    -fx-font-size: 14px;
+}
+
+.addProjectButton {
+    -fx-background-color: #4CAF50;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-padding: 8px 16px;
+}
+
+.deleteProjectButton {
+    -fx-background-color: #d9534f;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-padding: 8px 16px;
+}
+

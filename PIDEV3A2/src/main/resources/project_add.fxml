@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox fx:controller="utils.controllers.ProjectAddController" fx:id="projectAddPane" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+
+    <!-- Project Header Label -->
+    <Label fx:id="projectHeaderLabel" text="Add a New Project" style="-fx-font-size: 24px; -fx-font-weight: bold; -fx-padding: 20px 0px;" />
+
+    <VBox spacing="20">
+
+        <!-- Project Name Field -->
+        <HBox alignment="CENTER" spacing="10">
+            <Label text="Project Name:" style="-fx-font-size: 18px;"/>
+            <TextField fx:id="nameField" styleClass="form-field" HBox.hgrow="ALWAYS" style="-fx-pref-width: 400px; -fx-font-size: 18px;" />
+        </HBox>
+
+        <!-- Description Field -->
+        <HBox alignment="CENTER" spacing="10">
+            <Label text="Description:" style="-fx-font-size: 18px;"/>
+            <TextArea fx:id="descriptionArea" styleClass="form-field" minHeight="80" HBox.hgrow="ALWAYS" style="-fx-pref-width: 400px; -fx-font-size: 18px;" />
+        </HBox>
+
+        <Separator />
+
+        <!-- Start and End Date Fields -->
+        <HBox alignment="CENTER" spacing="10">
+            <Label text="Start Date:" style="-fx-font-size: 18px;"/>
+            <DatePicker fx:id="startDatePicker" styleClass="form-field" style="-fx-pref-width: 200px; -fx-font-size: 18px;" />
+            <Region HBox.hgrow="ALWAYS"/>
+            <Label text="End Date:" style="-fx-font-size: 18px;"/>
+            <DatePicker fx:id="endDatePicker" styleClass="form-field" style="-fx-pref-width: 200px; -fx-font-size: 18px;" />
+        </HBox>
+
+        <!-- Budget Field -->
+        <HBox alignment="CENTER" spacing="10">
+            <Label text="Budget:" style="-fx-font-size: 18px;"/>
+            <TextField fx:id="budgetField" styleClass="form-field" HBox.hgrow="ALWAYS" style="-fx-pref-width: 200px; -fx-font-size: 18px;"/>
+        </HBox>
+
+        <!-- Tags Field -->
+        <HBox alignment="CENTER" spacing="10">
+            <Label text="Tags (comma-separated):" style="-fx-font-size: 18px;"/>
+            <TextField fx:id="tagsField" styleClass="form-field" HBox.hgrow="ALWAYS" style="-fx-pref-width: 400px; -fx-font-size: 18px;"/>
+        </HBox>
+
+        <!-- Visibility Box -->
+        <HBox alignment="CENTER" spacing="10">
+            <Label text="Visibility:" style="-fx-font-size: 18px;"/>
+            <ComboBox fx:id="visibilityBox" styleClass="form-field" prefWidth="150" HBox.hgrow="ALWAYS" style="-fx-font-size: 18px;"/>
+        </HBox>
+
+        <Separator />
+
+        <!-- Upload Image Button -->
+        <HBox alignment="CENTER" spacing="10">
+            <Label text="Upload Image:" style="-fx-font-size: 18px;"/>
+            <Button onAction="#uploadImage" styleClass="form-button" style="-fx-font-size: 18px; -fx-background-color: #2196F3; -fx-text-fill: white;">
+                <ImageView fx:id="projectImage" styleClass="image-view" fitWidth="400" preserveRatio="true" />
+            </Button>
+        </HBox>
+
+        <!-- Save Button -->
+        <HBox spacing="10">
+            <Region HBox.hgrow="ALWAYS" />
+            <Button fx:id="saveButton" onAction="#saveButtonClicked" styleClass="form-button" text="Save" style="-fx-font-size: 18px; -fx-background-color: #4CAF50; -fx-text-fill: white; -fx-pref-width: 120px;"/>
+        </HBox>
+
+    </VBox>
+
+</VBox>
+

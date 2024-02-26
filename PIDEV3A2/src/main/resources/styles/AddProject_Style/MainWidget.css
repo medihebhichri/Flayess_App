@@ -1,0 +1,74 @@
+.menu_bare {
+    -fx-background-color: linear-gradient(to bottom right, rgba(56, 57, 144, 1), rgba(110, 63, 167, 1), rgba(161, 46, 147, 1), rgba(228, 0, 135, 1), rgba(255, 52, 81, 0.98));
+    -fx-border-color: rgb(255, 255, 255);
+    -fx-background-radius: 0% 0% 0% 0%;
+    -fx-border-radius:0% 0% 0% 0%;
+    -fx-border-color: rgb(255, 255, 255);
+    -fx-border-width: 5 5 5 5;
+    -fx-border-style: solid;
+}
+.title_bare{
+   -fx-background-color: #3E424B;
+   -fx-border-color: rgb(255, 255, 255);
+   -fx-background-radius: 0% 0% 0% 0%;
+   -fx-border-radius:0% 0% 0% 0%;
+   -fx-border-color: rgb(255, 255, 255);
+   -fx-border-width: 0 5 0 5;
+   -fx-border-style: solid;
+
+
+
+}
+.main_menue{
+-fx-background-color: rgb(255, 255, 255);
+}
+.main_icon_container{
+     -fx-hgap: 20px;
+    -fx-padding: 40px;
+
+    -fx-background-color: rgb(255,255,255);
+    -fx-background-radius: 50px;
+
+    -fx-border-radius: 50px;
+    -fx-border-width: 5px;
+    -fx-border-color: rgb(255,255,255);
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.8), 30, 0, 0, 0);
+}
+.mid_widget{
+     -fx-hgap: 20px;
+    -fx-padding: 40px;
+
+    -fx-background-color: rgb(255,255,255);
+    -fx-background-radius: 50px;
+    -fx-background-color: linear-gradient(to bottom right, rgba(56, 57, 144, 1), rgba(110, 63, 167, 1), rgba(161, 46, 147, 1), rgba(228, 0, 135, 1), rgba(255, 52, 81, 0.98));
+    -fx-border-radius: 50px;
+    -fx-border-color: rgb(255,255,255);
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.8), 30, 0, 0, 0);
+}
+
+
+.text-edit {
+    -fx-hgap: 20px;
+    -fx-padding: 40px;
+    -fx-background-color: rgb(255,255,255;
+    -fx-background-radius: 50px;
+    -fx-border-radius: 50px;
+    -fx-border-color: rgb(0, 0, 0);
+
+}
+.text-area {
+	-fx-background-color: white;
+
+	/* Shadow effect */
+	-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.2), 10, 0, 5.0, 5.0);
+}
+.text-area .content {
+	-fx-background-color: white;
+	-fx-background-insets: 0;
+	-fx-background-radius: 0;
+}
+.text-area:focused .content {
+	-fx-background-color: white;
+	-fx-background-insets: 0;
+	-fx-background-radius: 0;
+}
